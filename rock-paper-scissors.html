@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
+
+    <main class="page-main">
+
+        <header>
+            <h1>Rock Paper Scissors</h1>
+        </header>
+
+        <div class="score-board">
+            <div id="player-mark" class="label">player</div>
+            <div class="userChoice"></div>
+            <div id="computer-mark" class="label">computer</div>
+            <div class="computerChoice"></div>
+            <span id="user-score">0</span>:<span id="computer-score">0</span>
+        </div>
+
+        <div class="result">
+            <p>Let's go! The first who gets 5 points wins.</p>
+        </div>
+
+        <div class="playerchoice" id="buttons">
+            <div id="rock" class="button">
+                <img src="images/rock.png" onmouseover="this.src='images/rock-hover.png';" onmouseout="this.src='images/rock.png';" alt="Rock">
+            </div>
+            <div id="paper" class="button">
+                <img src="images/paper.png" onmouseover="this.src='images/paper-hover.png';" onmouseout="this.src='images/paper.png';" alt="Paper">
+            </div>
+            <div id="scissors" class="button">
+                <img src="images/scissors.png" onmouseover="this.src='images/scissors-hover.png';" onmouseout="this.src='images/scissors.png';" alt="Scissors">
+            </div>
+        </div>
+
+    </main>
+
+
     <script src="game.js"></script>
+
 </body>
 </html>

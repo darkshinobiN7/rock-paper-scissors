@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: white;
+}
+
+body {
+    background-color: #191b24; 
+}
+
+header > h1 {
+    text-align: center;
+    padding: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+
+}
+
+.score-board {
+    margin: 20px auto;
+    border: 3px solid white;
+    width: 450px;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    padding: 25px 20px 15px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+
+#player-mark {
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+#computer-mark {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+}
+
+.result {
+    font-size: 40px;
+    color: white;
+}
+
+.result > p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.label {
+    font-size: 25px;
+}
+
+.playerchoice {
+    margin: auto;
+    width: 400px;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    padding: 40px 20px 20px 20px;
+    justify-content: space-between;
+}
+
+.button > img {
+    width: 70px;
+    height: auto;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.disabledButton {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.userChoice {
+    margin-top: 20px;
+    margin-left: 20px;
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.computerChoice {
+    margin-top: 20px;
+    right: 60px;
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
